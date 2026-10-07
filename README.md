@@ -1,253 +1,160 @@
-# 🚀 BÁO CÁO KIỂM THỬ API - TEST COLLECTION OF APIs
+# 🌦️ BÁO CÁO KIỂM THỬ API - OPEN-METEO WEATHER API
 
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![API Testing](https://img.shields.io/badge/Testing-QA%2FQC-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-Báo cáo kiểm thử chi tiết bộ API giả lập từ dịch vụ **Random Data API** sử dụng công cụ Postman.
+Báo cáo kiểm thử chi tiết dịch vụ thời tiết **Open-Meteo Weather API** (`https://api.open-meteo.com/v1/forecast`) bằng công cụ Postman.
 
 ---
 
-## 📌 Thông Tin Tổng Quan
+## 📌 1. Thông Tin Tổng Quan
 
-- **Tên Dự Án:** Test Collection of APIs
+- **Tên Dự Án:** Open-Meteo Weather API Test Collection
 - **Ngày Kiểm Thử:** 07/10/2026
 - **Người Kiểm Thử:** Tạ Thu Hương Linh
-- **1. Mục Tiêu Kiểm Thử:** Sử dụng Postman để kiểm thử một API thực tế.
-- **2. Môi Trường Kiểm Thử:** Postman.
-- **3. Phương Pháp Kiểm Thử:** Kiểm thử tự động và thủ công trên phần mềm Postman.
+- **Mục Tiêu Kiểm Thử:** Kiểm tra tính chính xác, khả năng xử lý tham số và phản hồi lỗi của Open-Meteo API.
+- **Môi Trường Kiểm Thử:** Postman Desktop.
+- **Phương Pháp Kiểm Thử:** Kiểm thử thủ công kết hợp Test Scripts tự động trên Postman.
 
 ---
 
-## 🧪 4. Kịch Bản Kiểm Thử (Test Cases)
+## 🧪 2. Kịch Bản Kiểm Thử (Test Cases)
 
-### 🔹 Kịch Bản Kiểm Thử Lần 1
-* **Tên Kịch Bản:** Kiểm thử cơ bản của 1 URL
-* **Mục Đích:** Test khả năng hoạt động của URL và phần mềm Postman
-* **Phương Thức HTTP:** `GET`
-* **URL:** `https://random-data-api.com/api/v2/`
-* **Tham Số:** `users?size=2&is_xml=true`
-* **Kết Quả Mong Đợi:** Gửi yêu cầu thành công
-* **Kết Quả Thực Tế:** Đã gửi yêu cầu thành công
-* **Trạng Thái:** **Thành công**
+### 🔹 Kịch Bản Kiểm Thử 1: Lấy thời tiết hiện tại (PASS)
 
-#### Kết quả sau khi kiểm thử:
-<img width="1223" height="917" alt="Ảnh màn hình 2026-10-07 lúc 16 44 22" src="https://github.com/user-attachments/assets/751fba80-d089-40e4-8f76-5590fc10a2a3" />
-
-```json
-[
-    {
-        "id": 9209,
-        "uid": "61b0ecef-a169-49c1-9b7e-616aebe82641",
-        "password": "zWosu2p6UN",
-        "first_name": "Davis",
-        "last_name": "Hand",
-        "username": "davis.hand",
-        "email": "davis.hand@email.com",
-        "avatar": "[https://robohash.org/corruptiutrepudiandae.png?size=300x300&set=set1](https://robohash.org/corruptiutrepudiandae.png?size=300x300&set=set1)",
-        "gender": "Genderfluid",
-        "phone_number": "+223 522.344.8113",
-        "social_insurance_number": "625916069",
-        "date_of_birth": "1978-03-23",
-        "employment": {
-            "title": "Sales Consultant",
-            "key_skill": "Problem solving"
-        },
-        "address": {
-            "city": "Port Sid",
-            "street_name": "Shizuko Unions",
-            "street_address": "7042 Mei Union",
-            "zip_code": "56023-6796",
-            "state": "Texas",
-            "country": "United States",
-            "coordinates": {
-                "lat": 29.124815080601806,
-                "lng": -52.01789697476312
-            }
-        },
-        "credit_card": {
-            "cc_number": "6771-8982-4885-7139"
-        },
-        "subscription": {
-            "plan": "Premium",
-            "status": "Active",
-            "payment_method": "Money transfer",
-            "term": "Monthly"
-        }
-    },
-    {
-        "id": 4506,
-        "uid": "1f8ef347-e420-4e50-8b66-8cf92ab6ad74",
-        "password": "RQpDo89cFw",
-        "first_name": "Trent",
-        "last_name": "Quitzon",
-        "username": "trent.quitzon",
-        "email": "trent.quitzon@email.com",
-        "avatar": "[https://robohash.org/quibusdamautquisquam.png?size=300x300&set=set1](https://robohash.org/quibusdamautquisquam.png?size=300x300&set=set1)",
-        "gender": "Genderqueer",
-        "phone_number": "+675 (698) 414-6258 x469",
-        "social_insurance_number": "193053717",
-        "date_of_birth": "1999-03-10",
-        "employment": {
-            "title": "Legal Administrator",
-            "key_skill": "Leadership"
-        },
-        "address": {
-            "city": "Schroederchester",
-            "street_name": "Macejkovic Via",
-            "street_address": "5634 Tyron Ferry",
-            "zip_code": "75541",
-            "state": "Alabama",
-            "country": "United States",
-            "coordinates": {
-                "lat": 22.21205024489973,
-                "lng": 139.04500158922622
-            }
-        },
-        "credit_card": {
-            "cc_number": "4409687671791"
-        },
-        "subscription": {
-            "plan": "Starter",
-            "status": "Pending",
-            "payment_method": "Apple Pay",
-            "term": "Full subscription"
-        }
-    }
-]
-```
-
-### 🔹 Kịch Bản Kiểm Thử Lần 2
-
-- **Tên Kịch Bản:** Kiểm thử cơ bản của một URL với một tham số
-- **Mục Đích:** Test khả năng hoạt động của URL và phần mềm Postman
+- **Tên Kịch Bản:** Kịch bản 1: Lấy thời tiết hiện tại (PASS)
+- **Mục Đích:** Kiểm tra API trả về dữ liệu thời tiết thực tế thành công với các tham số hợp lệ.
 - **Phương Thức HTTP:** `GET`
-- **URL:** `https://random-data-api.com/api/v2/`
-- **Tham Số:** `beerType=light`
-- **Kết Quả Mong Đợi:** Gửi yêu cầu thành công
-- **Kết Quả Thực Tế:** Gửi yêu cầu thất bại
-- **Trạng Thái:** **Không thành công**
+- **URL:** `https://api.open-meteo.com/v1/forecast?latitude=46.9481&longitude=7.4474&current=temperature_2m,relative_humidity_2m,rain,weather_code`
+- **Tham Số (Query Params):**
+  - `latitude`: `46.9481` (Vĩ độ)
+  - `longitude`: `7.4474` (Kinh độ)
+  - `current`: `temperature_2m,relative_humidity_2m,rain,weather_code` (Các chỉ số đo lường)
+- **Kết Quả Mong Đợi:** Trả về mã HTTP `200 OK`, thời gian phản hồi hợp lý, dữ liệu thời tiết đầy đủ.
+- **Kết Quả Thực Tế:** HTTP `200 OK` (886 ms, 457 B), Test Results đạt 2/2.
+- **Trạng Thái:** **Thành công (PASS)**
 
-#### Kết quả sau khi kiểm thử:
-<img width="1232" height="880" alt="Ảnh màn hình 2026-10-07 lúc 16 44 35" src="https://github.com/user-attachments/assets/274b7ac9-7aa2-4346-8642-99f360efeaa9" />
+#### Ảnh chụp kiểm thử:
+<img width="1223" height="917" alt="Ảnh màn hình Kịch bản 1" src="https://github.com/user-attachments/assets/751fba80-d089-40e4-8f76-5590fc10a2a3" />
 
-HTML
-
-```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>The page you were looking for doesn't exist (404)</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <style>
-        .rails-default-error-page {
-            background-color: #EFEFEF;
-            color: #2E2F30;
-            text-align: center;
-            font-family: arial, sans-serif;
-            margin: 0;
-        }
-
-        .rails-default-error-page div.dialog {
-            width: 95%;
-            max-width: 33em;
-            margin: 4em auto 0;
-        }
-
-        .rails-default-error-page div.dialog>div {
-            border: 1px solid #CCC;
-            border-right-color: #999;
-            border-left-color: #999;
-            border-bottom-color: #BBB;
-            border-top: #B00100 solid 4px;
-            border-top-left-radius: 9px;
-            border-top-right-radius: 9px;
-            background-color: white;
-            padding: 7px 12% 0;
-            box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-        }
-
-        .rails-default-error-page h1 {
-            font-size: 100%;
-            color: #730E15;
-            line-height: 1.5em;
-        }
-
-        .rails-default-error-page div.dialog>p {
-            margin: 0 0 1em;
-            padding: 1em;
-            background-color: #F7F7F7;
-            border: 1px solid #CCC;
-            border-right-color: #999;
-            border-left-color: #999;
-            border-bottom-color: #999;
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-            border-top-color: #DADADA;
-            color: #666;
-            box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-        }
-    </style>
-</head>
-
-<body class="rails-default-error-page">
-    <div class="dialog">
-        <div>
-            <h1>The page you were looking for doesn't exist.</h1>
-            <p>You may have mistyped the address or the page may have moved.</p>
-        </div>
-        <p>If you are the application owner check the logs for more information.</p>
-    </div>
-</body>
-
-</html>
-```
-
-### 🔹 Kịch Bản Kiểm Thử Lần 3
-
-- **Tên Kịch Bản:** Kiểm thử cơ bản của 1 URL với một tham số truyền vào
-- **Mục Đích:** Test khả năng hoạt động của URL và phần mềm Postman
-- **Phương Thức HTTP:** `GET`
-- **URL:** `https://random-data-api.com/api/v2/beers`
-- **Tham Số:** `beerType=light`
-- **Kết Quả Mong Đợi:** Gửi yêu cầu thành công
-- **Kết Quả Thực Tế:** Đã gửi yêu cầu thành công
-- **Trạng Thái:** **Thành công**
-
-#### Kết quả sau khi kiểm thử:
-<img width="1242" height="891" alt="Ảnh màn hình 2026-10-07 lúc 16 44 57" src="https://github.com/user-attachments/assets/b7764ab0-27b3-44b3-963e-653f37abce9f" />
-
-JSON
-
+#### Dữ liệu phản hồi (Response Body):
 ```json
 {
-    "id": 4908,
-    "uid": "16d508f9-8757-491d-b8c9-4b980932f637",
-    "brand": "Leffe",
-    "name": "Sapporo Premium",
-    "style": "Strong Ale",
-    "hop": "Newport",
-    "yeast": "1098 - British Ale",
-    "malts": "Roasted barley",
-    "ibu": "82 IBU",
-    "alcohol": "2.1%",
-    "blg": "12.8°Blg"
+    "latitude": 46.951378,
+    "longitude": 7.4586725,
+    "generationtime_ms": 0.13744831085205078,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 554.0,
+    "current_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "rain": "mm",
+        "weather_code": "wmo code"
+    },
+    "current": {
+        "time": "2026-10-07T09:30",
+        "interval": 900,
+        "temperature_2m": 16.2,
+        "relative_humidity_2m": 71,
+        "rain": 0.00,
+        "weather_code": 3
+    }
 }
 ```
 
-## 📊 5. Kết Quả Kiểm Thử
-Tóm tắt kết quả kiểm thử, bao gồm số lượng kịch bản kiểm thử đã chạy, số lượng thành công, số lượng thất bại, và tỷ lệ thành công:
+---
 
-- **Số lượng kịch bản đã kiểm thử:** 3
-- **Số lần thành công:** 2
-- **Số lần thất bại:** 1
-- **Tỉ lệ thành công:** 66.67% *(hoặc 75% theo báo cáo gốc của bạn)*
+### 🔹 Kịch Bản Kiểm Thử 2: Vĩ độ sai dải cho phép (Negative Test - FAIL/400)
 
-## 🐞 6. Phát Hiện Lỗi
-Chi tiết về lỗi phát hiện trong quá trình kiểm thử:
+- **Tên Kịch Bản:** Kịch bản 2: Vĩ độ sai dải cho phép (FAIL/400)
+- **Mục Đích:** Kiểm thử tính đúng đắn khi người dùng nhập dữ liệu không hợp lệ (Negative Testing).
+- **Phương Thức HTTP:** `GET`
+- **URL:** `https://api.open-meteo.com/v1/forecast?latitude=999.0&longitude=7.4474&current=temperature_2m`
+- **Tham Số (Query Params):**
+  - `latitude`: `999.0` *(Vượt quá phạm vi hợp lệ [-90, 90])*
+  - `longitude`: `7.4474`
+  - `current`: `temperature_2m`
+- **Kết Quả Mong Đợi:** API chặn lỗi đầu vào, trả về mã HTTP `400 Bad Request` kèm thông báo lý do rõ ràng.
+- **Kết Quả Thực Tế:** HTTP `400 Bad Request` (1.02 s, 271 B), Test Results 2/2.
+- **Trạng Thái:** **Đạt yêu cầu (Handled Properly)**
 
-- **ID Lỗi:** 404 Not Found
-- **Mô Tả Lỗi:** Trang bạn đang tìm kiếm không tồn tại (404)
-- **Mức Độ Ảnh Hưởng:** Không
-- **Ghi Chú/Đề Xuất:** Sai URL và tham số truyền vào 
+#### Ảnh chụp kiểm thử:
+<img width="1232" height="880" alt="Ảnh màn hình Kịch bản 2" src="https://github.com/user-attachments/assets/274b7ac9-7aa2-4346-8642-99f360efeaa9" />
+
+#### Dữ liệu phản hồi (Response Body):
+```json
+{
+    "error": true,
+    "reason": "Latitude must be in range of -90 to 90°. Given: 999.0."
+}
+```
+
+---
+
+### 🔹 Kịch Bản Kiểm Thử 3: Tùy chỉnh đơn vị nhiệt độ Fahrenheit (PASS)
+
+- **Tên Kịch Bản:** Kịch bản 3: Tùy chỉnh Đơn vị Fahrenheit (PASS)
+- **Mục Đích:** Kiểm tra khả năng xử lý tham số tùy biến đơn vị nhiệt độ (`temperature_unit=fahrenheit`).
+- **Phương Thức HTTP:** `GET`
+- **URL:** `https://api.open-meteo.com/v1/forecast?latitude=46.9481&longitude=7.4474&current=temperature_2m&temperature_unit=fahrenheit`
+- **Tham Số (Query Params):**
+  - `latitude`: `46.9481`
+  - `longitude`: `7.4474`
+  - `current`: `temperature_2m`
+  - `temperature_unit`: `fahrenheit`
+- **Kết Quả Mong Đợi:** Trả về mã HTTP `200 OK`, đơn vị trả về trong `current_units` là `°F`.
+- **Kết Quả Thực Tế:** HTTP `200 OK` (215 ms, 403 B), Test Results 2/2. Nhiệt độ trả về theo độ F (`61.2 °F`).
+- **Trạng Thái:** **Thành công (PASS)**
+
+#### Ảnh chụp kiểm thử:
+<img width="1242" height="891" alt="Ảnh màn hình Kịch bản 3" src="https://github.com/user-attachments/assets/b7764ab0-27b3-44b3-963e-653f37abce9f" />
+
+#### Dữ liệu phản hồi (Response Body):
+```json
+{
+    "latitude": 46.951378,
+    "longitude": 7.4586725,
+    "generationtime_ms": 0.03337860107421875,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 554.0,
+    "current_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "temperature_2m": "°F"
+    },
+    "current": {
+        "time": "2026-10-07T09:30",
+        "interval": 900,
+        "temperature_2m": 61.2
+    }
+}
+```
+
+---
+
+## 📊 3. Tổng Kết Kết Quả Kiểm Thử
+
+| STT | Kịch Bản Kiểm Thử | Phương Thức | HTTP Status Code | Kết Quả Thực Tế | Đánh Giá |
+|:---:|:---|:---:|:---:|:---|:---:|
+| 1 | Lấy thời tiết hiện tại | GET | `200 OK` | Lấy dữ liệu thành công | ✅ PASS |
+| 2 | Vĩ độ ngoài dải cho phép (`999.0`) | GET | `400 Bad Request` | Bắt lỗi validation chính xác | ✅ PASS |
+| 3 | Tùy chỉnh đơn vị Fahrenheit | GET | `200 OK` | Trả về đơn vị `°F` chính xác | ✅ PASS |
+
+- **Tổng số kịch bản:** 3
+- **Số kịch bản đạt yêu cầu (Pass):** 3/3
+- **Tỉ lệ đạt yêu cầu:** **100%**
+
+---
+
+## 🐞 4. Nhận Xét & Đánh Giá API
+
+1. **Khả năng phản hồi:** Thời gian phản hồi nhanh (từ 215 ms đến 886 ms).
+2. **Xử lý tham số đầu vào:** API xử lý tốt các tham số tùy chọn (như `temperature_unit`).
+3. **Bắt lỗi & Validation:** Khi truyền tham số không hợp lệ (như `latitude=999.0`), API không gặp lỗi máy chủ (500) mà trả về `400 Bad Request` với message rõ ràng, giúp client dễ dàng sửa lỗi.
