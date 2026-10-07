@@ -34,9 +34,6 @@ Báo cáo kiểm thử chi tiết bộ API giả lập từ dịch vụ **Random
 #### Kết quả sau khi kiểm thử:
 <img width="1223" height="917" alt="Ảnh màn hình 2026-10-07 lúc 16 44 22" src="https://github.com/user-attachments/assets/751fba80-d089-40e4-8f76-5590fc10a2a3" />
 
-<details>
-<summary>🔍 <b>Kết quả kiểm thử chi tiết (JSON):</b></summary>
-
 ```json
 [
     {
