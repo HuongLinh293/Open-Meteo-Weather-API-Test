@@ -11,8 +11,8 @@ Báo cáo kiểm thử chi tiết bộ API giả lập từ dịch vụ **Random
 ## 📌 Thông Tin Tổng Quan
 
 - **Tên Dự Án:** Test Collection of APIs
-- **Ngày Kiểm Thử:** 24/05/2024
-- **Người Kiểm Thử:** Giang Thành An
+- **Ngày Kiểm Thử:** 07/10/2026
+- **Người Kiểm Thử:** Tạ Thu Hương Linh
 - **1. Mục Tiêu Kiểm Thử:** Sử dụng Postman để kiểm thử một API thực tế.
 - **2. Môi Trường Kiểm Thử:** Postman.
 - **3. Phương Pháp Kiểm Thử:** Kiểm thử tự động và thủ công trên phần mềm Postman.
@@ -32,7 +32,7 @@ Báo cáo kiểm thử chi tiết bộ API giả lập từ dịch vụ **Random
 * **Trạng Thái:** **Thành công**
 
 #### Kết quả sau khi kiểm thử:
-![Kết quả Kịch Bản 1](https://github.com/gtaAsian/New-Collection-of-APIs/assets/170786444/c340d30f-fea5-4f45-b752-369a1f066f80)
+<img width="1223" height="917" alt="Ảnh màn hình 2026-10-07 lúc 16 44 22" src="https://github.com/user-attachments/assets/751fba80-d089-40e4-8f76-5590fc10a2a3" />
 
 <details>
 <summary>🔍 <b>Kết quả kiểm thử chi tiết (JSON):</b></summary>
@@ -132,6 +132,8 @@ Báo cáo kiểm thử chi tiết bộ API giả lập từ dịch vụ **Random
 - **Trạng Thái:** **Không thành công**
 
 #### Kết quả sau khi kiểm thử:
+<img width="1232" height="880" alt="Ảnh màn hình 2026-10-07 lúc 16 44 35" src="https://github.com/user-attachments/assets/274b7ac9-7aa2-4346-8642-99f360efeaa9" />
+
 HTML
 
 ```html
@@ -217,6 +219,8 @@ HTML
 - **Trạng Thái:** **Thành công**
 
 #### Kết quả sau khi kiểm thử:
+<img width="1242" height="891" alt="Ảnh màn hình 2026-10-07 lúc 16 44 57" src="https://github.com/user-attachments/assets/b7764ab0-27b3-44b3-963e-653f37abce9f" />
+
 JSON
 
 ```json
